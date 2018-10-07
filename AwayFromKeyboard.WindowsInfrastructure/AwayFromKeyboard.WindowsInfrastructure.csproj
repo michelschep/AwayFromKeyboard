@@ -31,6 +31,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BlinkStickDotNet, Version=2.0.16.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\BlinkStickDotNet.2.0.16\lib\net40\BlinkStickDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="HidSharp, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\HidSharp.1.5\lib\net35\HidSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="LibUsbDotNet, Version=2.2.8.104, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LibUsbDotNet.2.2.8\lib\LibUsbDotNet.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -41,7 +50,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BlinkStickNotifier.cs" />
+    <Compile Include="Clock.cs" />
+    <Compile Include="Computer.cs" />
+    <Compile Include="ConsoleNotifier.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AwayFromKeyboard.Core\AwayFromKeyboard.Core.csproj">
+      <Project>{A29D50F0-7783-4475-89BA-F65FDF6AA134}</Project>
+      <Name>AwayFromKeyboard.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
