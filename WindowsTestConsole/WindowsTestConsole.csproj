@@ -49,5 +49,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AwayFromKeyboard.Core\AwayFromKeyboard.Core.csproj">
+      <Project>{A29D50F0-7783-4475-89BA-F65FDF6AA134}</Project>
+      <Name>AwayFromKeyboard.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AwayFromKeyboard.WindowsInfrastructure\AwayFromKeyboard.WindowsInfrastructure.csproj">
+      <Project>{4C90691C-C204-4A86-A1CE-A051DF889F72}</Project>
+      <Name>AwayFromKeyboard.WindowsInfrastructure</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
