@@ -1,7 +1,7 @@
 ﻿using System;
 using AwayFromKeyboard.Core.Interfaces;
 
-namespace AwayFromKeyboard.WindowsInfrastructure
+namespace AwayFromKeyboard.Infrastructure
 {
     public class Clock:IClock
     {
