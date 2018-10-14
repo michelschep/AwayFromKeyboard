@@ -13,7 +13,8 @@ namespace WindowsTestConsole
     {
         static void Main(string[] args)
         {
-            var healthService = new HealthService(new Computer(), new BlinkStickNotifier(), new Clock());
+            var notifier = new ForgivingNotifier(new BlinkStickNotifier());
+            var healthService = new HealthService(new Computer(), notifier, new Clock());
             healthService.Start();
 
             Console.WriteLine("Health Service Running");
