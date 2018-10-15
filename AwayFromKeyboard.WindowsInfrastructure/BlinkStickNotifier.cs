@@ -39,7 +39,7 @@ namespace AwayFromKeyboard.WindowsInfrastructure
             var led = BlinkStick.FindFirst();
             led.OpenDevice();
 
-            led.SetColor(RgbColor.FromString("blue"));
+            led.Blink(RgbColor.FromString("blue"), 2);
         }
     }
 }
