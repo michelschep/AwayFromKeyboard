@@ -25,7 +25,7 @@ namespace AwayFromKeyboard.Core.Services
 
             while (true)
             {
-                Task.Delay(2000).Wait();
+                Task.Delay(30*1000).Wait();
 
                 if (wasLocked)
                 {
