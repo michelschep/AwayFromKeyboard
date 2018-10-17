@@ -48,7 +48,7 @@ namespace AwayFromKeyboard.Core.Services
                 {
                     if (!_computer.IsLocked())
                     {
-                        if (TimeComputerUnlocked(lastTimeUnlocked).Minutes >= 20)
+                        if (TimeComputerUnlocked(lastTimeUnlocked).Minutes >= 40)
                         {
                             _notifier.AdviceUserToGoForAWalk();
                         }
