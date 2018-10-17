@@ -15,7 +15,7 @@ namespace AwayFromKeyboard.WindowsInfrastructure
             var led = BlinkStick.FindFirst();
             led.OpenDevice();
             
-            led.Blink(RgbColor.FromString("red"), 3);
+            led.Blink(RgbColor.FromString("red"), 2);
         }
 
         public void PleaseComeBack()
@@ -39,7 +39,7 @@ namespace AwayFromKeyboard.WindowsInfrastructure
             var led = BlinkStick.FindFirst();
             led.OpenDevice();
 
-            led.Blink(RgbColor.FromString("blue"), 2);
+            led.Blink(RgbColor.FromString("blue"), 1);
         }
     }
 }
