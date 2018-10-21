@@ -17,16 +17,17 @@ namespace AwayFromKeyboard.WindowsInfrastructure
 
         public void PleaseComeBack()
         {
+            Console.WriteLine("Please come back");
         }
 
         public void StayAway()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Stay away");
         }
 
         public void StayHere()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Stay here");
         }
     }
 }
