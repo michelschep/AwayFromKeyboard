@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using AwayFromKeyboard.Core.Services;
 using AwayFromKeyboard.Infrastructure;
 using AwayFromKeyboard.WindowsInfrastructure;
@@ -11,7 +7,7 @@ namespace WindowsTestConsole
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Start Heath Service");
 
